@@ -1,0 +1,20 @@
+    <div class="row">
+        <!-- each블록은 데이터를 순회할때 사용함 -->
+        {{#each images}}
+        <div class="3u 12u$(xsmall)">
+            <a href="/post/{{ uniqueId }}">
+                <div class="postItem">
+                    <div class="postItemImg">
+                        <img src="/public/upload/{{ filename }}" alt="{{ title }}">
+                    </div>
+                    <div class="postItemText">
+                        <span class="title">{{ title }}</span>
+                        <div class="ellipsis">{{ description }}</div>
+                        <div class="hashtag">{{ hashtag }}</div>
+                        <!--button class="brownButton">자세히보기</button-->
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </div>

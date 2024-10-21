@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>JJIN BLOG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+	  <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- PAGEWRAPPER -->
+    <div id="container">
+
+        <!-- HEADER -->
+        <div id="header">
+
+            <!-- LOGO -->
+            <h1 class="logo" onclick="location.href='/'">
+                imazin.co.kr
+                <span class="subtitle">: 상상</span>
+            </h1>
+
+            <!-- MENU -->
+            <div class="navigation">
+                <nav id="nav">
+                    <ul class="navWrapper">
+                        <li class="navItem" onclick="location.href='/about'">about</li>
+                        <li class="navItem" onclick="location.href='/post'">blog</li>
+                        <li class="navItem" onclick="location.href='/portfolio'">portfolio</li>
+                        <li class="navItem" onclick="location.href='/wirte'">WIRTE</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- POST WRAPPER & EACH -->
+        <div class="12u 12u$(medium) wrapper">
+          {{{ body }}}
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+            <!-- LOGO -->
+            <h1 class="logo" onclick="location.href='/'">
+                imazin.co.kr
+                <span class="subtitle">: 상상</span>
+            </h1>
+
+            <!-- COPYRIGHT -->
+            <span>&copy; 2019 HYEJIN LIM. All rights reserved.</span>
+        </div>
+        <!-- END // FOOTER -->
+
+    </div>
+    <!-- END // PAGEWRAPPER -->
+
+    <!-- SCRIPT -->
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/breakpoints.min.js"></script>
+    <script src="/public/js/util.js"></script>
+    <script src="/public/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!-- POST VIEW - WRAPPER -->
+<div class="12u 12u$(medium)">
+    <div class="row">
+        <div class="9u 12u$(medium)">
+            <!-- POST TITLE -->
+            <div class="postTitle">
+                <h2>{{ image.title }}</h2>
+                <span>{{ timeago image.timestamp }}</span>
+            </div>
+            <!-- POST MAIN IMAGE -->
+            <div class="postImage">
+                <img src="/public/upload/{{ image.filename }}" alt="{{ image.title }}">
+            </div>
+            <!-- POST CONTENTS -->
+            <div class="postContents">
+                {{ image.description }}
+            </div>
+
+            <div class="postHashtag">
+                <span>{{ image.hashtag }}</span>
+                <button class="brownButton" id="btnDelete" data-id="{{ image.uniqueId }}">delete</button>
+                <button class="brownButton" id="btnModify" data-id="{{ image.uniqueId }}">modify</button>
+            </div>
+
+            <!-- COMMENT LIST -->
+            <div class="postCommentList">
+                <ul>
+                    {{#each comments}}
+                    <li>
+                        {{ comment }}
+                        <div class="commentContents">
+                            <img src="http://www.gravatar.com/avatar/{{ gravatar }}?d=identicon&s=15">
+                            <span>{{ name }} [ {{ timeago timestamp }} ]</span>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <!-- POST COMMENTS -->
+            <div class="postComments">
+                <h3>Comments</h3>
+                <form method="post" action="/post/{{ image.uniqueId }}/comment">
+                    <div class="row">
+
+                        <div class="6u 6u$(medium)">
+                            <input type="text" name="name" placeholder="NAME">
+                        </div>
+                        <div class="6u$ 6u$(medium)">
+                            <input type="text" name="email" placeholder="EMAIL">
+                        </div>
+                        <div class="12u 12u$(medium)">
+                            <textarea role="3" name="comment" placeholder="COMMENTS..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="brownButton">submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- POST VIEW - SIDEBAR -->
+        <div class="3u$ 12u$(medium) sidebar">
+            <!-- SIDEBAR - POSTS -->
+            {{> stats this}}
+            {{> popular this }}
+            {{> comments this }}
+        </div>
+        <!-- END // POST VIEW - SIDEBAR -->
+    </div>
+</div>

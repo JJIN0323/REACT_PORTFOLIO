@@ -1,0 +1,8 @@
+<ul class="latestList">
+    <!--h5>comments</h5-->
+    {{#each sidebar.comments}}
+    <li onclick="location.href='/post/{{ image.uniqueId }}'">
+        ·　{{comment}}
+    </li>
+    {{/each}}
+</ul>

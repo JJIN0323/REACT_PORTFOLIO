@@ -1,0 +1,29 @@
+/* noto-serif-kr-regular - korean */
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif KR'), local('NotoSerifKR-Regular'),
+       url('../fonts/noto-serif-kr-v3-korean-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-serif-kr-v3-korean-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-kr-600 - korean */
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Serif KR SemiBold'), local('NotoSerifKR-SemiBold'),
+       url('../fonts/noto-serif-kr-v3-korean-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-serif-kr-v3-korean-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-kr-900 - korean */
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Serif KR Black'), local('NotoSerifKR-Black'),
+       url('../fonts/noto-serif-kr-v3-korean-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-serif-kr-v3-korean-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
